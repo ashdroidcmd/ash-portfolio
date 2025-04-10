@@ -16,7 +16,7 @@ const Projects = () => {
           ...doc.data(),
         }));
 
-        console.log("Fetched Projects:", projectList);
+        // console.log("Fetched Projects:", projectList);
         setProjects(projectList);
 
       } catch (error) {
