@@ -1,4 +1,6 @@
 .env
+firebase-config.js
+secret-config.js
 
 # Logs
 logs
