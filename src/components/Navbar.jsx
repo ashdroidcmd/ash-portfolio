@@ -1,0 +1,58 @@
+import React from 'react'
+import '../App.css'
+
+const Navbar = () => {
+  // Navbar Animation
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  function changeActiveLink() {
+      let scrollY = window.scrollY;
+
+      sections.forEach((section) => {
+          let sectionTop = section.offsetTop - 100;
+          let sectionHeight = section.offsetHeight;
+          let sectionId = section.getAttribute("id");
+
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+              navLinks.forEach((link) => {
+                  link.classList.remove("active");
+              });
+
+              document.querySelector(`a[href="#${sectionId}"]`).classList.add("active");
+          }
+      });
+  }
+
+  window.addEventListener("scroll", changeActiveLink);
+});
+  return (
+    <nav className="navbar navbar-expand-lg fixed-top bg-black">
+        <div className="container-fluid justify-content-end">
+          <button className="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon "></span>
+          </button>
+    
+          <div className="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link fs-5 px-4 text-white" href="#home-section">Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link fs-5 px-4 text-white" href="#about-section">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link fs-5 px-4 text-white" href="#project-section">Projects</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link fs-5 px-4 text-white" href="#contact-section">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  )
+}
+
+export default Navbar
