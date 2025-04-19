@@ -1,10 +1,12 @@
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+
     scroll-padding-top: 50px;
     scroll-behavior: smooth;
   }
-  
-  /* Navbar Section */
   
   
   /* Custom Section */

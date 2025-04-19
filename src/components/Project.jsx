@@ -33,14 +33,14 @@ const Projects = () => {
     <div className="container">
       <h1 className="text-danger text-center mb-5">PROJECTS</h1>
 
-      <div className="row row-cols-1 row-cols-md-3 g-4">
+      <div className="row row-cols-1 row-cols-md-2 g-4">
         {projects.length === 0 ? (
           <p className="text-center text-white">No projects found.</p>
         ) : (
           projects.map((project) => (
             <div className="col" key={project.id}>
               <div className="card h-100 border-danger bg-black">
-                  <img src={AutotekImage} className="card-img-top border-danger border-bottom" alt={project.name} />
+                  <img src={`/ash-portfolio/${project.image}`} className="card-img-top border-danger border-bottom" alt={project.name} />
                 <div className="card-body bg-black rounded">
                   <h3 className="card-title text-danger text-center">{project.name}</h3>
                   <p className="m-0 text-white text-center">{project.description}</p>
@@ -50,8 +50,8 @@ const Projects = () => {
                     </small>
                   </div>
                   <div className="d-flex flex-row justify-content-center">
-                    <button className="custom-btn text-start mx-1">Live</button>
-                    <button className="custom-btn text-start mx-1">GitHub</button>
+                    <a href={project.slug} target="_blank"><button className="custom-btn text-start mx-1">Live</button></a>
+                    <a href={project.github} target="_blank"><button className="custom-btn text-start mx-1">Repo</button></a>
                   </div>
                 </div>
               </div>

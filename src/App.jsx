@@ -8,13 +8,11 @@ import './App.css';
 function App() {
   return (
     <>
-    <main className=''>
       <Navbar />
       <Hero />
       <AboutMe />
       <Projects />
       <ContactMe />
-    </main>
     </>
   )
 }
