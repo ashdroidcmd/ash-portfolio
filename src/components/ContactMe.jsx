@@ -30,7 +30,7 @@ const ContactMe = () => {
     <section className="bg-black hero d-flex justify-content-center align-items-center vh-100 px-3 border-top border-danger" id="contact-section">
 
       <div className="container text-white text-center">
-        <h1 className="fw-bolder text-danger  mt-5">Let's create something amazing together</h1>
+        <h1 className="text-danger  mt-5">Let's create something amazing together</h1>
         
         <div className="mx-auto">
           <form ref={form} onSubmit={sendEmail} className="card bg-dark p-4 mx-auto border border-danger rounded-5">
@@ -54,7 +54,15 @@ const ContactMe = () => {
             <div className="d-flex justify-content-center">
               <a href="https://www.linkedin.com/in/ashlee-zoe-gesite-25a28334b/" target="_blank" className="text-white fs-1 logo"><i className="bi bi-linkedin" title="Linkedin"></i></a>
               <a href="https://github.com/ashdroidcmd" target="_blank" className="text-white fs-1 logo"><i className="bi bi-github" title="Github"></i></a>
-              <a href="mailto:z.wolff25@gmail.com" className="text-white fs-1 logo"><i className="bi bi-envelope-fill" title="Email"></i></a>
+              <a href="https://www.instagram.com/kuroi_3d/" target="_blank" className="text-white fs-1 logo"><i class="bi bi-instagram" title="Instagram"></i></a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=z.wolff25@gmail.com&su=Hello%20Ash&body=I%20visited%20your%20portfolio!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white fs-1 logo"
+              >
+                <i className="bi bi-envelope-fill" title="Email"></i>
+              </a>
             </div>
             <small className="text-white ">&copy; 2025 Ashlee Zoe Gesite, All Rights Reserved.</small>
           </form>

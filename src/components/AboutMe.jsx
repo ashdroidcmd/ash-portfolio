@@ -11,7 +11,7 @@ return (
                     <h1 className="text-danger m-0 fw-bolder">I'm Ashlee Zoe Gesite</h1>
                     <small className="">Location: Bohol, Philippines</small>
                     <small className="text-secondary">Front End Web Developer | 3D Artist</small>
-                    <p className="m-0">I specialize in creating interactive websites and designing immersive 3D environments. Passionate about crafting digital experiences with a blend of creativity and technology.</p>
+                    <p className="m-0">I specialize in creating interactive websites and designing immersive 3D assets. Passionate about crafting digital experiences with a blend of creativity and technology.</p>
                 </div>
             </section>
 

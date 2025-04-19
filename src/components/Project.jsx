@@ -39,7 +39,7 @@ const Projects = () => {
         ) : (
           projects.map((project) => (
             <div className="col" key={project.id}>
-              <div className="card h-100 border-danger bg-black">
+              <div className="card h-100 border-danger bg-black custom-card">
                   <img src={`/ash-portfolio/${project.image}`} className="card-img-top border-danger border-bottom" alt={project.name} />
                 <div className="card-body bg-black rounded">
                   <h3 className="card-title text-danger text-center">{project.name}</h3>
