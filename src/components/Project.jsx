@@ -2,9 +2,19 @@ import '../App.css'
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
-import AutotekImage from '/img/auto-tek1.png';
+
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 const Projects = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -33,14 +43,35 @@ const Projects = () => {
     <div className="container">
       <h1 className="text-danger text-center mb-5">PROJECTS</h1>
 
-      <div className="row row-cols-1 row-cols-md-2 g-4">
+      <div className="row row-cols-1 g-4">
         {projects.length === 0 ? (
           <p className="text-center text-white">No projects found.</p>
         ) : (
           projects.map((project) => (
             <div className="col" key={project.id}>
               <div className="card h-100 border-danger bg-black custom-card">
-                  <img src={`/ash-portfolio/${project.image}`} className="card-img-top border-danger border-bottom" alt={project.name} />
+                <Swiper
+                    style={{
+                    '--swiper-navigation-color': '#fff',
+                    '--swiper-pagination-color': '#fff',
+                    }}
+                    spaceBetween={0}
+                    navigation={true}
+                    thumbs={{ swiper: thumbsSwiper }}
+                    modules={[FreeMode, Navigation, Thumbs]}
+                    className="productSwiper1 "
+                >
+                    {project.images && project.images.map((imgSrc, index) => (
+                    <SwiperSlide key={index}>
+                        <img
+                        className="img-fluid"
+                        src={`${import.meta.env.BASE_URL}${encodeURI(imgSrc)}`}
+                        alt={`Project ${index + 1}`}
+                        />
+                    </SwiperSlide>
+                    ))}
+                </Swiper>
+                
                 <div className="card-body bg-black rounded">
                   <h3 className="card-title text-danger text-center">{project.name}</h3>
                   <p className="m-0 text-white text-center">{project.description}</p>

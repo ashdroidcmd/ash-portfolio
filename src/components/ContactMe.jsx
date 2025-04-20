@@ -54,7 +54,7 @@ const ContactMe = () => {
             <div className="d-flex justify-content-center">
               <a href="https://www.linkedin.com/in/ashlee-zoe-gesite-25a28334b/" target="_blank" className="text-white fs-1 logo"><i className="bi bi-linkedin" title="Linkedin"></i></a>
               <a href="https://github.com/ashdroidcmd" target="_blank" className="text-white fs-1 logo"><i className="bi bi-github" title="Github"></i></a>
-              <a href="https://www.instagram.com/kuroi_3d/" target="_blank" className="text-white fs-1 logo"><i class="bi bi-instagram" title="Instagram"></i></a>
+              <a href="https://www.instagram.com/kuroi_3d/" target="_blank" className="text-white fs-1 logo"><i className="bi bi-instagram" title="Instagram"></i></a>
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=z.wolff25@gmail.com&su=Hello%20Ash&body=I%20visited%20your%20portfolio!"
                 target="_blank"
