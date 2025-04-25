@@ -25,7 +25,7 @@ return (
                     <p className="lead mb-4">Bringing pixels to life, one frame at a time.</p>
                     <a href="#project-section" className=""><button type="button" className="custom-btn">View Web Projects</button></a>
                     <a href="https://www.instagram.com/kuroi_3d/" target="_blank" className="mx-2"><button type="button" className="custom-btn">View 3D Projects</button></a>
-                    <a href='/Resume-Web-Dev.pdf' target="_blank" className=""><button type="button" className="custom-btn">Download CV</button></a>
+                    <a href='/ash-portfolio/Resume-Web-Dev.pdf' target="_blank" className=""><button type="button" className="custom-btn">Download CV</button></a>
                 </div>
         </div>
     </section>
