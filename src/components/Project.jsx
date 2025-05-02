@@ -40,10 +40,10 @@ const Projects = () => {
   return (
 
     <section className="bg-black py-5" id="project-section">
-    <div className="container">
+    <div className="container-fluid">
       <h1 className="text-danger text-center mb-5">PROJECTS</h1>
 
-      <div className="row row-cols-1 g-4">
+      <div className="row row-cols-1 row-cols-lg-2 g-2">
         {projects.length === 0 ? (
           <p className="text-center text-white">No projects found.</p>
         ) : (
