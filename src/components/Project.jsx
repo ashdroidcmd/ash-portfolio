@@ -38,7 +38,7 @@ const Projects = () => {
   return (
 
     <section className="bg-black py-5" id="project-section">
-      <div className="container-fluid">
+      <div className="container">
         <h1 className="text-danger text-center mb-5">PROJECTS</h1>
 
         <div className="row row-cols-1 g-2">
