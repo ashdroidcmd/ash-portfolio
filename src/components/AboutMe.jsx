@@ -22,11 +22,11 @@ return (
                             <h5 className="card-title text-danger text-center fw-bold">Front End Web Dev</h5>
                             <p className="fs-5 text-white text-center">"A user interface is like a joke. If you have to explain it, it’s not that good."</p>
                             <div className="d-flex justify-content-center gap-2 mt-3">
-                                <img className="logo" src='/ash-portfolio/img/logo/html.png' alt="HTML" title="HTML" />
-                                <img className="logo" src='/ash-portfolio/img/logo/css.png' alt="CSS" title="CSS" />
-                                <img className="logo" src='/ash-portfolio/img/logo/js.png' alt="Javascript" title="Javascript" />
-                                <img className="logo" src='/ash-portfolio/img/logo/bootstrap.png' alt="Bootstrap"title="Bootstrap" />
-                                <img className="logo" src='/ash-portfolio/img/logo/react.png' alt="React" title="React" />
+                                <img className="logo" src={`${import.meta.env.BASE_URL}img/logo/html.png`} alt="HTML" title="HTML" />
+                                <img className="logo" src={`${import.meta.env.BASE_URL}img/logo/css.png`} alt="CSS" title="CSS" />
+                                <img className="logo" src={`${import.meta.env.BASE_URL}img/logo/js.png`} alt="Javascript" title="Javascript" />
+                                <img className="logo" src={`${import.meta.env.BASE_URL}img/logo/bootstrap.png`} alt="Bootstrap"title="Bootstrap" />
+                                <img className="logo" src={`${import.meta.env.BASE_URL}img/logo/react.png`} alt="React" title="React" />
                             </div>
                         </div>
                     </div>
@@ -38,9 +38,9 @@ return (
                             <h5 className="card-title text-danger fw-bold text-center">3D Artist</h5>
                             <p className="fs-5 text-white text-center">"The best way to improve is to keep creating."</p>
                             <div className="d-flex justify-content-center gap-2 mt-3">
-                                <img className="logo" src='/ash-portfolio/img/logo/blender.png' alt="Blender" title="Blender" />
-                                <img className="logo" src='/ash-portfolio/img/logo/photoshop.png' alt="Photoshop" title="Adobe Photoshop" />
-                                <img className="logo" src='/ash-portfolio/img/logo/davinci.png' alt="Davinci Resolve" title="Davinci Resolve" />
+                                <img className="logo" src={`${import.meta.env.BASE_URL}img/logo/blender.png`} alt="Blender" title="Blender" />
+                                <img className="logo" src={`${import.meta.env.BASE_URL}img/logo/photoshop.png`} alt="Photoshop" title="Adobe Photoshop" />
+                                <img className="logo" src={`${import.meta.env.BASE_URL}img/logo/davinci.png`} alt="Davinci Resolve" title="Davinci Resolve" />
                             </div>
                         </div>
                     </div>
