@@ -10,7 +10,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
-import { Autoplay, FreeMode, Navigation, Thumbs} from 'swiper/modules';
+import { Autoplay, FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 const Projects = () => {
   const [thumbsSwiper] = useState(null);
@@ -86,8 +86,7 @@ const Projects = () => {
                       project.images.map((imgSrc, index) => (
                         <SwiperSlide key={index}>
                           <img
-                            className="img-fluid swiper-image"
-                            src={`/ash-portfolio${imgSrc}`}
+                            src={`${import.meta.env.BASE_URL}images/${imgSrc}`}
                             alt={`Project ${index + 1}`}
                           />
                         </SwiperSlide>
