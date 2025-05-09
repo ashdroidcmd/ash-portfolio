@@ -86,7 +86,7 @@ const Projects = () => {
                       project.images.map((imgSrc, index) => (
                         <SwiperSlide key={index}>
                           <img
-                            src={`${import.meta.env.BASE_URL}images/${imgSrc}`}
+                            src={`${import.meta.env.BASE_URL}img/${imgSrc}`}
                             alt={`Project ${index + 1}`}
                           />
                         </SwiperSlide>
