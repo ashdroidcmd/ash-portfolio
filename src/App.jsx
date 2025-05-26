@@ -9,12 +9,8 @@ import './App.css';
 function App() {
   return (
     <>
-      <Analytics />
       <Navbar />
       <Hero />
-      <AboutMe />
-      <Projects />
-      <ContactMe />
     </>
   )
 }

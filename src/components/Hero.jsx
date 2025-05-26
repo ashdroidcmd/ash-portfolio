@@ -5,7 +5,7 @@ import '../App.css'
 const Hero = () => {
 return (
     <>
-    <section className="bg-black hero d-flex  justify-content-center flex-column" id="home-section">
+    <section className="bg-black hero d-flex justify-content-center flex-column" id="home-section">
         <div className="wrapper">
             <span></span>
             <span></span>
@@ -22,10 +22,8 @@ return (
         <div>
             <h1 className="display-5 fw-bold text-danger text-center">I'm Ash</h1>
                 <div className="col-lg-6 mx-auto text-white text-center">
-                    <p className="lead mb-4">Blending code and creativity to bring ideas to life.</p>
-                    <a href="#project-section" className=""><button type="button" className="custom-btn">View Web Projects</button></a>
-                    <a href="https://www.instagram.com/kuroi_3d/" target="_blank" className="mx-2"><button type="button" className="custom-btn">View 3D Projects</button></a>
-                    <a href='/Resume-Web-Dev.pdf' target="_blank" className=""><button type="button" className="custom-btn">Download CV</button></a>
+                    <h3>Hi! If you are seeing this. This is my old dev portfolio. Click the button below to the new one!</h3>
+                    <a href="https://ash-portfoliov2.vercel.app/" target="_blank" className="mx-2"><button type="button" className="custom-btn">New Portfolio</button></a>
                 </div>
         </div>
     </section>

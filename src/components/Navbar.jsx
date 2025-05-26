@@ -14,15 +14,6 @@ const Navbar = () => {
               <li className="nav-item">
                 <a className="nav-link fs-5 px-4 text-white" href="#home-section">Home</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link fs-5 px-4 text-white" href="#about-section">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link fs-5 px-4 text-white" href="#project-section">Projects</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link fs-5 px-4 text-white" href="#contact-section">Contact Me</a>
-              </li>
             </ul>
           </div>
         </div>
